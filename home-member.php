@@ -84,7 +84,7 @@
 </table>
 <table width="964" border="0" align="center" cellpadding="0" cellspacing="0">
 	<tr bgcolor="#B0C4DE">
-		<td height="36" colspan="5" bgcolor="#B0C4DE"><div align="right" style="margin:0 12px 0 0;"><font color="#000">Copyright &copy; 2015. By RajaPutraMedia.Com</font><br></div></td>
+		<td height="36" colspan="5" bgcolor="#B0C4DE"><div align="right" style="margin:0 12px 0 0;"><font color="#000">Copyright &copy; 2018. By AISSystem</font><br></div></td>
 	</tr>
 </table>
 <div align="center"></div>
