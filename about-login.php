@@ -17,6 +17,7 @@
 					<tr><br />
 						<td><img src="image/user.jpg" width="100" height="100" /></td>
 						<td style="vertical-align: top" width="300">
+							<!-- ambil data detail login -->
 						Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?php echo $_SESSION['username'];?><br />
 						Nama Anda&nbsp;&nbsp;&nbsp;: <?php echo $_SESSION['nama'];?><br />
 						Hak Akses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?php echo $_SESSION['hak_akses'];?><br />

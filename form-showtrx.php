@@ -31,6 +31,7 @@ $member = $_POST['user'];
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- fill table -->
                         <?php
                            
                             $Cari="SELECT * FROM pinjaman where username = '$member'";
@@ -77,6 +78,7 @@ $member = $_POST['user'];
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- fill table -->
                         <?php
                            
                             $Cari="SELECT * FROM bayar where username = '$member'";

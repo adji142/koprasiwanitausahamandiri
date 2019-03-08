@@ -10,6 +10,7 @@
 	<th width="20%">NO HP</td>&nbsp;
 	<th width="17%">Action</td>&nbsp;     
 </tr>
+<!-- fill table -->
 <?php
 	$koneksi=mysqli_connect("koprasiwanitausahamandiri.com", "u6018530_root", "admin123","u6018530_koperasi_new");
 	$Cari="SELECT * FROM member";

@@ -1,10 +1,13 @@
 <body bgcolor="#EEF2F7">
 <?php
-	include "koneksi.php";
+	include "koneksi.php"; // panggil koneksi
+	// ambil data dari form
 	$username	= $_POST['username'];
 	$nama		= $_POST['nama'];
 	$tgl_ambil	= $_POST['thn_ambil']."-".$_POST['bln_ambil']."-".$_POST['tgl_ambil'];
 	$jml_ambil	= $_POST['jml_ambil'];
+	// end ambil data dari form
+
 	//validasi data jika data kosong
 	if (empty($_POST['jml_ambil'])) {
 	?>
