@@ -5,7 +5,7 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 // membuat koneksi Ke MYSQL dan Database, Sesuaikan Dengan pengaturan di tempat anda 
-$koneksi=mysqli_connect("localhost", "root", "","koperasi_new");
+$koneksi=mysqli_connect("koprasiwanitausahamandiri.com", "u6018530_root", "admin123","u6018530_koperasi_new");
 // $db=mysqli_select_db("koperasi_new",$koneksi);
 
 // mencari password berdasarkan username

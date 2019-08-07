@@ -28,6 +28,8 @@ $member = $_POST['user'];
                         <th scope="col">Nama Peminjam</th>
                         <th scope="col">Tgl Peminjaman</th>
                         <th scope="col">Nominal</th>
+                        <th scope="col">Bunga(%)</th>
+                        <th scope="col">Total Pinjaman</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,6 +43,8 @@ $member = $_POST['user'];
                                 $nama= stripslashes ($hasil['nama']);
                                 $tgl 	= stripslashes ($hasil['tgl_transaksi']);
                                 $pinjaman 	= stripslashes ($hasil['jml_transaksi']);
+                                $bunga   = stripslashes ($hasil['bungapersen']);
+                                $total   = stripslashes ($hasil['jml_transaksi']+$hasil['bungarupiah']);
                             {
                                 $nomer++;
                         ?>
@@ -49,6 +53,8 @@ $member = $_POST['user'];
                             <td><?=$nama?></td>
                             <td><?=$tgl?></td>
                             <td><?=$pinjaman?></td>
+                            <td><?=$bunga?></td>
+                            <td><?=$total?></td>
                         </tr>
                         <?php
                             }}

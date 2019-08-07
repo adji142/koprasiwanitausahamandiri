@@ -40,7 +40,9 @@
 		<tr height="46">
 			<td>&nbsp;</td>
 			<td>Tanggal Transaksi</td>
-			<td><select name="tgl_transaksi">
+			<td>
+
+				<!-- <select name="tgl_transaksi">
 				<?php
 					for ($i=1; $i<=31; $i++) {
 						$tg = ($i<10) ? "0$i" : $i;
@@ -62,13 +64,19 @@
 						echo "<option value='$i'>$i</option>";	
 					}
 				?>
-				</select>
+				</select> -->
+				<input type="date" name="tgltransaksi">
 			</td>
 		</tr>
 		<tr height="46">
 			<td>&nbsp;</td>
 			<td>Jumlah Pinjaman</td>
 			<td><input type="text" name="jml_transaksi" size="25" maxlength="10" /></td>
+		</tr>
+		<tr height="46">
+			<td>&nbsp;</td>
+			<td>Bunga (%)</td>
+			<td><input type="number" name="bunga"/></td>
 		</tr>
 		<tr>
 			<td>&nbsp;</td>

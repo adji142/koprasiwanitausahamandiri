@@ -3,8 +3,10 @@
 	include "koneksi.php";
 	$username	= $_POST['username'];
 	$nama		= $_POST['nama'];
-	$tgl_transaksi	= $_POST['thn_transaksi']."-".$_POST['bln_transaksi']."-".$_POST['tgl_transaksi'];
+	// $tgl_transaksi	= $_POST['thn_transaksi']."-".$_POST['bln_transaksi']."-".$_POST['tgl_transaksi'];
+	$tgl_transaksi	= $_POST['tgltransaksi'];
 	$jml_transaksi	= $_POST['jml_transaksi'];
+	$bunga	= $_POST['bunga'];
 	//validasi data jika data kosong
 	if (empty($_POST['jml_transaksi'])) {
 	?>
@@ -15,11 +17,12 @@
 	<?php
 	}
 	else {
+	$bungarupiah = $jml_transaksi*$bunga/100;
 	//Masukan data ke Table pinjaman
-	$input	="INSERT INTO pinjaman (username, nama, tgl_transaksi, jml_transaksi) VALUES ('$username','$nama','$tgl_transaksi','$jml_transaksi')";
+	$input	="INSERT INTO pinjaman (username, nama, tgl_transaksi, jml_transaksi,bungapersen,bungarupiah) VALUES ('$username','$nama','$tgl_transaksi','$jml_transaksi','$bunga','$bungarupiah')";
 	$query_input =mysqli_query($Open,$input);
 	//Update pinjaman di tabel member
-	$update="UPDATE member SET pinjaman=pinjaman + $jml_transaksi WHERE username='$username'";
+	$update="UPDATE member SET pinjaman=pinjaman + $jml_transaksi + $bungarupiah WHERE username='$username'";
 	$query_update =mysqli_query($Open,$update);
 		if ($query_update) {
 		//Jika Sukses
